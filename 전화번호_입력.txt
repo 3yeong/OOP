@@ -1,0 +1,29 @@
+//세영, 전화번호 입력.
+	string UserProgram::input_phoneNum() {
+		int k = 1;
+		string a = " ";
+		int b = 0;
+		while (k == 1) {
+			
+			
+			if (b == 0) {
+				getchar();
+				getline(cin, a);
+				b++;
+			}
+			else {
+				std::cout << "  전화번호 : " << std::endl;
+				getline(cin, a);
+			}
+			
+			if (a.length() != 11) {
+				std::cout << "  전화번호는 11자리 입니다." << std::endl;
+				k = 1;
+			}
+			else {
+				k = 0;
+			}
+		}
+
+		return a;
+	}

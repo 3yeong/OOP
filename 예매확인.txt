@@ -1,0 +1,35 @@
+void UserProgram::show_ticket() {
+
+	string ticketNum;
+	
+	if (controller->currentUser == NULL) {
+		cout << "예매번호 : ";
+		cout;
+		cin >> ticketNum;
+
+		Ticket t = controller->search_ticket(ticketNum);
+		int a = t.numOfShowinginfo;
+		cout << controller->data->movie_list[a].title << endl;
+		cout << "상영시간 : " << controller->data->showingInfo_list[a].starttime << endl;
+		cout << "좌석 : ";
+		for (int i = 0; i < t.total_num; i++) {
+			cout << t.seat[i] << " ";
+		}
+		cout << endl;
+		cout << "-------------------------------" << endl;
+	}
+	else {
+		for (int i = 0; i < controller->currentUser->ticket_count; i++) {
+			cout << "(" << i << ")";
+			cout << controller->data->movie_list[i].title << endl;
+			cout << "상영시간 : " << controller->data->showingInfo_list[i].starttime << endl;
+			cout << "좌석 : ";
+			for (int j = 0; j < controller->currentUser->ticket->total_num; j++) {
+			
+				cout << controller->currentUser->ticket[i].seat[j] << " ";
+			}
+			cout << endl;
+			cout << "-------------------------------" << endl;
+		}
+	}
+}

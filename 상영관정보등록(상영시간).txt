@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+string remove(string &a) {
+	a.erase(std::remove(a.begin(), a.end(), '.'), a.end());
+	a.erase(std::remove(a.begin(), a.end(), ':'), a.end());
+	return a;
+} //공백제거
+
+void input() {
+	string starttime;
+
+	cout << "상영시간 2019년 12월 05일 12시30분 = 2019.12.05.12:30 형식으로 입력해주세요" << endl;
+	getline(std::cin, starttime);
+
+	starttime = remove(starttime);
+
+	cout << starttime << endl;
+}
+
+int main(void) {
+
+	input();
+	
+	getchar();
+}

@@ -1,0 +1,24 @@
+﻿  AdminProgram.cpp
+  Controller.cpp
+c:\users\권세영\documents\카카오톡 받은 파일\task1 - 복사본 (2) (5)\task1 - 복사본 (2) (4)\task1\controller.cpp(363): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+c:\users\권세영\documents\카카오톡 받은 파일\task1 - 복사본 (2) (5)\task1 - 복사본 (2) (4)\task1\controller.cpp(437): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+  Data.cpp
+  Main.cpp
+  Movie.cpp
+  Payment.cpp
+  Seat.cpp
+  ShowingInfo.cpp
+  Theater.cpp
+  Ticket.cpp
+  User.cpp
+  UserData.cpp
+  UserUnknown.cpp
+  UserProgram.cpp
+c:\users\권세영\documents\카카오톡 받은 파일\task1 - 복사본 (2) (5)\task1 - 복사본 (2) (4)\task1\userprogram.cpp(3): warning C4005: '_CRT_SECURE_NO_WARNINGS': 매크로 재정의
+  c:\users\권세영\documents\카카오톡 받은 파일\task1 - 복사본 (2) (5)\task1 - 복사본 (2) (4)\task1\userprogram.cpp: note: '_CRT_SECURE_NO_WARNINGS'의 이전 정의를 참조하십시오.
+  코드를 생성하고 있습니다.
+  296 of 300 functions (98.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  Task1.vcxproj -> C:\Users\권세영\Documents\카카오톡 받은 파일\Task1 - 복사본 (2) (5)\Task1 - 복사본 (2) (4)\Release\Task1.exe

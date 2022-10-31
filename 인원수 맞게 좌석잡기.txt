@@ -1,0 +1,70 @@
+//세영. 인원수에 맞게 
+	string* UserProgram::seat(int num) {
+		std::string * p = new std::string[num];//return 할 배열
+		std::string str_arr[1000];
+		int k = 1;
+		int n = 0;
+		while (k == 1)
+		{
+			int cheak = 0;
+			int str_cnt = 0;//개수 체크
+
+			std::string seat_in;
+			char *str_buff = new char[1000];
+
+			std::cout << "자리를 입력해 주세요." << std::endl;
+			if (n == 0) {
+				getchar();
+				n++;
+			}
+			getline(std::cin, seat_in);
+
+			strcpy(str_buff, seat_in.c_str());
+
+
+			char *tok = strtok(str_buff, " ");
+			while (tok != nullptr) {
+				str_arr[str_cnt++] = std::string(tok);
+				tok = strtok(nullptr, " ");
+			}
+
+			if ((str_cnt) != num) {
+				std::cout << "인원 수와 좌석 선택 수가 다릅니다." << std::endl;
+				std::cout << "다시 입력해주세요.\n" << std::endl;
+				k = 1;
+			}
+			else {
+				for (int j = 0; j < num; j++) {
+					char a[3];
+					strcpy(a, str_arr[j].substr(0, 2).c_str());
+
+					if (!isalpha(a[0])) {
+						std::cout << "입력한 값이 형식에 맞지 않습니다." << std::endl;
+						std::cout << "다시 입력해주세요.\n" << std::endl;
+						cheak = 1;
+						break;
+
+					}
+					else if (!isdigit(a[1])) {
+						std::cout << "입력한 값이 형식에 맞지 않습니다." << std::endl;
+						std::cout << "다시 입력해주세요.\n" << std::endl;
+						cheak = 1;
+						break;
+
+					}
+
+				}
+				if (cheak == 0) {
+					k = 0;
+				}
+
+			}
+
+		}
+
+
+		for (int i = 0; i < num; i++) {
+			p[i] = str_arr[i];
+		}
+		return p;
+	}

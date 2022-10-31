@@ -1,0 +1,12 @@
+﻿  AdminProgram.cpp
+  Controller.cpp
+c:\users\soyeon baek\source\repos\task1\task1\controller.cpp(280): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+c:\users\soyeon baek\source\repos\task1\task1\controller.cpp(345): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+  Data.cpp
+  Main.cpp
+  Ticket.cpp
+  User.cpp
+  UserData.cpp
+  UserProgram.cpp
+  코드를 생성하고 있습니다...
+  Task1.vcxproj -> C:\Users\SOYEON BAEK\source\repos\Task1\Debug\Task1.exe
